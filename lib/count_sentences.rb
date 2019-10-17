@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    str_arr = self.split(/?<=[.?!]\s*/)
+    str_arr = self.split(/(?<=[.?!])\s*/)
     binding.pry
     count = 0
     str_arr.each do |str|
